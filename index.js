@@ -9,4 +9,4 @@ const app = appSrc(express, bodyParser, fs.createReadStream, crypto, http);
 
 var server = http.createServer(app);
 
-server.listen(9443);
+server.listen(process.env.PORT);
